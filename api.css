@@ -1,0 +1,260 @@
+.wrapper{
+    overflow: visible;
+}
+
+.controls{
+    background: url('../API_project/assets/produce_in_basket.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 2em 6em 5em 2em rgba(0, 0, 0, 0.65) inset;
+    display: block;
+    text-align: center;
+    margin: none;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: [colOne] 50% [colTwo] 50% [endCol];
+    grid-template-rows: [rowOne] 20% [rowTwo] 20% [rowThree] 20% [rowFour] 20% [rowFive] 20% [endRow];
+    grid-column-gap: 2em;
+    background: #9AA7BA;
+    position: relative;
+    /* left: 10%; */
+    /* width: 80%; */
+    /* min-width: 410px; */
+    padding-top: 1em; 
+    padding-bottom: 1em; 
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 2em .5em 2em 2em rgba(0, 0, 0, 0.5);  
+    z-index: 2;
+}
+
+#mealPicker{
+    padding-top: .5em;
+    text-align: center;
+    color: white;
+    text-shadow: .05em .05em #413840;
+    font-size: 1.5em;
+}
+
+#letsMakeADish{
+    text-align: center;
+    color: white;
+    padding-top: 0em;
+}
+
+#instructions{
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+#likeLabel{
+    grid-column-start: colOne;
+    grid-column-end: colTwo;
+    grid-row-start: rowOne;
+    grid-row-end: rowTwo;
+    position: relative;
+    justify-self: end;
+    align-self: center;
+    font-size: 1em;
+    color: #0b1606;
+    
+}
+
+#likeInput{
+    grid-column-start: colTwo;
+    grid-column-end: endCol;
+    grid-row-start: rowOne;
+    grid-row-end: rowTwo;
+    position: relative;
+    justify-self: start;
+    align-self: center;
+    max-width: 70%;
+    border: .1em solid #576550;
+}
+
+#include{
+    max-width: 100%;
+    /* border: .1em solid #576550; */
+}
+
+#excludeLabel{
+    grid-column-start: colOne;
+    grid-column-end: colTwo;
+    grid-row-start: rowTwo;
+    grid-row-end: rowThree;
+    position: relative;
+    justify-self: end;
+    align-self: center;
+    font-size: 1em;
+    color: #0b1606;
+}
+
+#excludeInput{
+    grid-column-start: colTwo;
+    grid-column-end: endCol;
+    grid-row-start: rowTwo;
+    grid-row-end: rowThree;
+    position: relative;
+    justify-self: start;
+    align-self: center;
+    border: .1em solid #576550;  
+    max-width: 70%;
+}
+
+#exclude{
+    max-width: 100%;
+}
+
+#dietLabel{
+    grid-column-start: colOne;
+    grid-column-end: colTwo;
+    grid-row-start: rowThree;
+    grid-row-end: rowFour;
+    position: relative;
+    justify-self: end;
+    align-self: center;
+    font-size: 1em;
+    color: #0b1606;
+}
+
+#dietInput{
+    grid-column-start: colTwo;
+    grid-column-end: endCol;
+    grid-row-start: rowThree;
+    grid-row-end: rowFour;
+    position: relative;
+    justify-self: start;
+    align-self: center;
+    border: .1em solid #576550;  
+    max-width: 70%;
+}
+
+#diet{
+    max-width: 100%;
+}
+
+#calorieLabel{
+    grid-column-start: colOne;
+    grid-column-end: colTwo;
+    grid-row-start: rowFour;
+    grid-row-end: rowFive;
+    position: relative;
+    justify-self: end;
+    align-self: center;
+    font-size: 1em;
+    color: #0b1606;
+}
+
+#calorieInput{
+    grid-column-start: colTwo;
+    grid-column-end: endCol;
+    grid-row-start: rowFour;
+    grid-row-end: rowFive;
+    position: relative;
+    justify-self: start;
+    align-self: center;
+    border: .1em solid #576550;
+    max-width: 70%;
+}
+
+#calories{
+    max-width: 100%;
+}
+
+#button{
+    grid-column-start: colOne;
+    grid-column-end: endCol;
+    grid-row-start: rowFive;
+    grid-row-end: endRow;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#submit{
+    font-size: 1.5em;
+    color: #576550;
+    border: 1px solid #576550;
+    border-radius: 15px;
+    box-shadow: 0em .5em 2em .2em rgba(0, 0, 0, 0.7);
+}
+
+#submit:hover{
+    font-size: 1.5em;
+    background-color: #576550;
+    color: white;
+    border: 1px solid #576550;
+    border-radius: 15px;
+    box-shadow: 0em .5em 2em .2em rgba(87, 101, 80, 0.7);
+}
+
+#submit:active{
+    text-decoration: none;
+}
+
+#submit:visited{
+    text-decoration: none;
+}
+
+.result{
+    height: 75vh;
+    background-size: cover;
+    background-color: #9AA7BA;
+    margin: none;
+}
+
+.display{
+    margin: none;
+    display: grid;
+    grid-template-columns: [columnOne] 50% [columnTwo] 50% [endColumn];
+    grid-template-rows: [firstRow] 30% [secondRow] 30% [thirdRow] 40% [lastRow];
+    background-color: #9AA7BA;
+}
+
+.para{
+    grid-column-start: columnOne;
+    grid-column-end: columnTwo;
+    grid-row-start: firstRow;
+    grid-row-end: secondRow;
+    align-self: start;
+    justify-self: center;
+    font-size: 2em;
+    color: #576550;
+}
+
+.label{
+    grid-column-start: columnOne;
+    grid-column-end: columnTwo;
+    grid-row-start: secondRow;
+    grid-row-end: thirdRow;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5em;
+    color: #576550;
+}
+
+.anch{
+    grid-column-start: columnOne;
+    grid-column-end: columnTwo;
+    grid-row-start: thirdRow;
+    grid-row-end: lastRow;
+    align-self: end;
+    justify-self: center;
+    font-size: 2em;
+    color: #576550;
+}
+
+.img{
+    grid-column-start: columnTwo;
+    grid-column-end: endColumn;
+    grid-row-start: firstRow;
+    grid-row-end: lastRow;
+    align-self: center;
+    justify-self: center;
+}

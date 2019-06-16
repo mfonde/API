@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dish Builder</title>
+    <link rel="stylesheet" href="./api.css">
+</head>
+<body>
+   <div class="wrapper">
+       <div class="controls">
+         <h3 id="mealPicker">Hello! I'm Your Personal Meal Planner!</h3>
+         <h1 id="letsMakeADish">Let's Make A Dish!</h1>
+         <p id="instructions">Please enter one item into each field below. Then I will create a dish you will love!</p>
+           <form class="form">
+                        <span id="likeLabel"><label for="include"><b>Tell Me What You Like!</b></label></span>
+                        <span class="include" id="likeInput"><input type="text" placeholder="ex: Chicken, Broccoli, Eggplant, etc." id="include" class="include" required></span>
+
+                        <span id="excludeLabel"><label for="exclude"><b>Tell Me What You Don't Like.</b></label></span>
+                        <span id="excludeInput"><input type="text" id="exclude" placeholder="ex: Olives, Pork, etc." id="exclude" class="exclude" required></span>
+                      
+                        <span id="dietLabel"><label for="diet"><b>Any Dietary Restrictions?</b></label></span>
+                        <span id="dietInput"><input type="text" id="diet" placeholder="ex: High-Fiber, Vegetarian, None, etc." id="diet" class="diet" required></span>
+
+                        <span id="calorieLabel"><label for="calories"><b>Maximum Calories:</b></label></span>
+                        <span id="calorieInput"><input type="text" placeholder="Please Enter A Number" id="calories" class="calories" required></span>
+                      
+                      <span id="button">
+                        <button id="submit" onclick="window.scroll(0,500)"><b>Get Your Dish!</b></button>
+                      </span>
+
+           </form>
+       </div>
+       <div class="result" id="result">
+           <section>
+                
+           </section>
+       </div>
+   </div>
+    
+    <script src="api.js"></script>
+</body>
+</html>
